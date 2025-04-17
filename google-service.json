@@ -1,0 +1,13 @@
+{
+"type": "service_account",
+"project_id": "visitmyjoburg-4db92",
+"private_key_id": "cd0f0f28b5be9696b412f28ec2febd217966b5ac",
+"private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC0R2DTiB5CIrEd\nNxuJPTlV5LcPfji8dXqRgq2gtw/gjlyT/OsmeSrmLQTVFsWQiwt8dFe9pvN2aO7s\niuxkNT2RiOO1RFFcfLtc6a+n3WctZxy7Q4221nC7GHsuIpS3MNSbafzZHxQsXArR\naLTgUDnvTrcmV9QR2tOxTtHFa0YpK8IaMYg0SoYrXD8kwQvqPaoaCcLXnU05Wm5w\nbX+dqNR6tvCjMd59ctD6a789uIX/OZNV6Ow2C3zvWUOJcENP5AHpOXvDdMNDrfxJ\nfprbKUlI4KlMooP8yQdphDhKCJYDE2pBmM/u6JHpJn122Qi1WczMcJLdb5o2Vd4C\nZI0tvv1rAgMBAAECggEAQA99IK2l0upw9Wi3qDTRQuxbAG5hytYUD9DX0dw7EBiG\nXS/qf2lfDRvCM9Y7rfk6w6az5viEWvc+r19OUO16S1TRVYBJSQwpqAKCIKxUFZYm\nZ4TBvs7EkDdKzkILhm0bn34yExUwHfM3BOKoI21eqOLXwhBDk3Sm9MKFWBmefNIt\n8nLy7F3IaHrJ3Fqnlyy7fNVrT3bHYK/Ja5rcwH0W3L5dWGxouillXtxiY2wU3XqY\nk7aJQeHFrfQzODCFieXDyw2xW4eh/sniVRvSftSPfw0v0McKjfhNLXDwKfaeFgLj\nd58SoLM8UZ+gjzCqYf/t3Acm8HVAlxncvF9VTZITwQKBgQDzTnxpYu9oz5edp8J7\nr1n3jvnG9h5vitwvLlAxr+FgzsmZdT3F4vxIGEWHHUXcoq2HIUUyi7wGpQBn16ij\n4iSqseQcc9Ntvw5yiC6hefCbmB1njr5cqAS2AYkoFKADxtI5Nexhj6AFNKotqB08\nOWLrJdR4+OEW9dqDHhClIanOTQKBgQC9rx3M83hCUDZnBByvKmWPFdNNWYOKJG7V\ng6weZzUI+jnqUf2UyyjjBXuY9A3J4gykAznJwQ3cqIM7xGHmBQ9OPK5/TwD0W/OC\nuxa6Ykl+bP7k5adZULCsGXgOPfPIiGbnDvzJIZJHLVzkcWnRu0Hl1BvZQm7XimoT\ngI51JAKGlwKBgD3TCsAIuMcMQP15nGyrYRQLy6Jn9dHoGg0PGqeVhpJ/2TBaX0kC\nZZK4QCqWIKNw3uFAbgHrCesyUEkSvrJuC10oeMtWDzqK2tP1kMvNXXtcCtS+q9aF\nhzTsbPq3SvXKtq586kTcJxBLkpapakxcVKtl4Hig3SllbZH1uMsNI8XdAoGAOGPF\n7Tb4KmakNa3gRSbKeGYZoiYZV8kK9gil84flGV0iOInVZBWdexgXLVpoevrrnRqk\nZFkzIMUr9mmkXPhmG3Eowwoek4Z+dv/det1bUe1fPXcUcBXv38nWig1a2uPKC6jF\n95k2XlibBAK/Xa1YotWSzdzVDNjGPjP6pdJludMCgYAsnT+XOpil9X4jP+LILQDJ\nzRqWdSLszqvT5dSd8z7uootgO3zKY5LMyO2R+oj4TNkUARAb2fWjBU2EY1M90V9n\nhCK5j4efpP+SwxHpO1ihIz/UPT1PVuLnezTyCbmA6m8jq+f6NNXkJG6uZcikaAUc\n6GzTRUbi+AHbxW3UVRnxMQ==\n-----END PRIVATE KEY-----\n",
+"client_email": "firebase-adminsdk-fbsvc@visitmyjoburg-4db92.iam.gserviceaccount.com",
+"client_id": "113452542158898060880",
+"auth_uri": "https://accounts.google.com/o/oauth2/auth",
+"token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-fbsvc%40visitmyjoburg-4db92.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
