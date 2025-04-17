@@ -4,28 +4,9 @@
       "distribution": "store",
       "android": {
         "buildType": "apk",
-        "googleServicesFile": "./android/app/google-services.json"
       },
       "ios": {
         "simulator": false
-      }
-    },
-    "preview": {
-      "distribution": "internal",
-      "android": {
-        "buildType": "apk",
-        "googleServicesFile": "./android/app/google-services.json"
-      },
-      "ios": {
-        "simulator": true
-      }
-    },
-    "development": {
-      "developmentClient": true,
-      "distribution": "internal",
-      "android": {
-        "buildType": "apk",
-        "googleServicesFile": "./android/app/google-services.json"
       }
     }
   }
