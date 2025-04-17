@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { firebaseApp } from "@/firebase"; // Adjust path to match your project
 import { WebView } from "react-native-webview";
 import ThemedButton from "@/components/ThemedButton";
- import { ThemedView } from '@/components/ThemedView';
+import { ThemedView } from '@/components/ThemedView';
+
 
 import {
   View,

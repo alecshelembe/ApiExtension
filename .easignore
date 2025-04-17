@@ -22,8 +22,6 @@ build
 .idea/
 
 # iOS/Android junk (if you're building for one platform at a time)
-ios/
-android/
 
 # Expo previews
 web-build/

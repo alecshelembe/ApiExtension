@@ -19,7 +19,7 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff",
-        "googleServicesFile": "./google-services.json"
+        "googleServicesFile": "./android/app/google-services.json"
       },
       "package": "com.aceshelembe.ApiExtenstion"
     },
