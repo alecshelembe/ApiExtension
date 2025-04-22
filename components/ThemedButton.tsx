@@ -75,7 +75,7 @@ const LocationUploader = ({ onLocationSuccess }) => {
 
       } catch (error) {
         console.error('Error uploading location:', error);
-        Alert.alert('Error', 'An error occurred while uploading location. Please try again.');
+        Alert.alert('Error', 'An error occurred while uploading location. Please try again later.');
       }
     };
 
