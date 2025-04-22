@@ -64,7 +64,7 @@ const ModalPopUp = ({ locationData, onClose }) => {
 
                 <Text style={styles.label}>{actualLocation.address}</Text>
                 <Text style={styles.description}>{actualLocation.description}</Text>
-                <Text style={styles.label}>Entrance Fee: {actualLocation.fee} ZAR</Text>
+                <Text style={styles.label}>Booking Fee: {actualLocation.fee} ZAR</Text>
 
                 {actualLocation.extras && (
                   <Text style={styles.label}>
@@ -108,7 +108,11 @@ const ModalPopUp = ({ locationData, onClose }) => {
             ) : (
               <Text>No data available</Text>
             )}
-            <Button title="Close" onPress={handleClose} />
+            <View style={styles.closeButtonWrapper}>
+              <Button title="✕ Close" onPress={handleClose} color="#333" />
+            </View>
+
+
           </View>
         </View>
       </Modal>
@@ -127,9 +131,17 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  closeButtonWrapper: {
+    marginTop: 10,
+    borderRadius: 8,
+    overflow: 'hidden', // gives rounded corners effect
+    borderColor: '#ccc',
+    borderWidth: 1,
+  },
+
   modalBackground: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: 'rgba(0, 0, 0, 0.1)',
     justifyContent: 'center',
     alignItems: 'center',
   },
