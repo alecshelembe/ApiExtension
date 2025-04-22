@@ -3,7 +3,7 @@ import { firebaseApp } from "@/firebase"; // Adjust path to match your project
 import { WebView } from "react-native-webview";
 import ThemedButton from "@/components/ThemedButton";
 import { ThemedView } from '@/components/ThemedView';
-
+import ModalPopUp from '@/components/ModalPopUp';
 
 import {
   View,
@@ -92,7 +92,6 @@ const SocialPostCard: React.FC = () => {
           )}
           <View style={styles.headerText}>
             <Text style={styles.title}>{item.first_name}</Text>
-            <Text style={styles.date}>{item.phone}</Text>
             <Text style={styles.date}>
               {new Date(item.created_at).toLocaleDateString(undefined, {
                 weekday: "long",
@@ -183,11 +182,17 @@ const SocialPostCard: React.FC = () => {
                                  <ThemedButton title="Get My location!" theme="primary" onPress={() => alert("Button Pressed!")} />
                                </ThemedView>
 
+
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
+     popup: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+      },
   listContainer: { padding: 16, marginTop: 25 },
   card: {
     backgroundColor: "#fff",

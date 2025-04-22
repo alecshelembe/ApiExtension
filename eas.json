@@ -3,7 +3,7 @@
     "production": {
       "distribution": "store",
       "android": {
-        "buildType": "apk",
+        "buildType": "apk"
       },
       "ios": {
         "simulator": false
