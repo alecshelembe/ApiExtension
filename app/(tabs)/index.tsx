@@ -3,6 +3,9 @@ import { firebaseApp } from "@/firebase"; // Adjust path to match your project
 import { WebView } from "react-native-webview";
 import ThemedButton from "@/components/ThemedButton";
 import { ThemedView } from '@/components/ThemedView';
+import ImageViewing from 'react-native-image-viewing';
+import { TouchableOpacity } from 'react-native';
+
 
 import {
   View,
@@ -38,6 +41,11 @@ const SocialPostCard: React.FC = () => {
   const [posts, setPosts] = useState<SocialPost[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+
+  const [isViewerVisible, setIsViewerVisible] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [viewerImages, setViewerImages] = useState<{ uri: string }[]>([]);
+
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -111,13 +119,26 @@ const SocialPostCard: React.FC = () => {
 
         {item.images && item.images.length > 0 ? (
           <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.imageContainer}>
-            {item.images.map((img, index) => (
-              <Image key={index} source={{ uri: `https://visitmyjoburg.co.za/${img}` }} style={styles.image} />
-            ))}
+            {item.images.map((img, index) => {
+              const imageUri = `https://visitmyjoburg.co.za/${img}`;
+              return (
+                <TouchableOpacity
+                  key={index}
+                  onPress={() => {
+                    setViewerImages(item.images.map(i => ({ uri: `https://visitmyjoburg.co.za/${i}` })));
+                    setCurrentImageIndex(index);
+                    setIsViewerVisible(true);
+                  }}
+                >
+                  <Image source={{ uri: imageUri }} style={styles.image} />
+                </TouchableOpacity>
+              );
+            })}
           </ScrollView>
         ) : (
           <Text style={styles.noImagesText}>No images available.</Text>
         )}
+
 
         {videoId && (
           <View style={styles.videoContainer}>
@@ -176,22 +197,27 @@ const SocialPostCard: React.FC = () => {
         contentContainerStyle={styles.listContainer}
         showsVerticalScrollIndicator={false}
       />
+      <ImageViewing
+        images={viewerImages}
+        imageIndex={currentImageIndex}
+        visible={isViewerVisible}
+        onRequestClose={() => setIsViewerVisible(false)}
+      />
+
       {/* Add Button Here */}
-                               <ThemedView style={styles.buttonContainer}>
-                                 <ThemedButton title="Get My location!" theme="primary" onPress={() => alert("Button Pressed!")} />
-                               </ThemedView>
-
-
+      <ThemedView style={styles.buttonContainer}>
+        <ThemedButton title="Get My location!" theme="primary" onPress={() => alert("Button Pressed!")} />
+      </ThemedView>
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-     popup: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-      },
+  popup: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   listContainer: { padding: 16, marginTop: 25 },
   card: {
     backgroundColor: "#fff",

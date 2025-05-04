@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
 
   modalBackground: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.1)',
+    backgroundColor: '#000000',
     justifyContent: 'center',
     alignItems: 'center',
   },
