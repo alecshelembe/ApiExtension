@@ -110,9 +110,9 @@ const SocialPostCard: React.FC = () => {
           </View>
         </View>
         <View style={styles.detailsCard}>
-          <Text style={styles.description}>{item.address}</Text>
-          <Text style={styles.title}>{item.place_name}</Text>
-          <Text style={styles.fee}>R {item.fee}</Text>
+           {/* <Text style={styles.description}>{item.address}</Text> */}
+           <Text style={styles.title}>{item.place_name}</Text>
+          {/*<Text style={styles.fee}>R {item.fee}</Text>*/}
           <Text style={styles.description}>{item.description}</Text>
           <Text style={styles.description}>{item.note}</Text>
         </View>

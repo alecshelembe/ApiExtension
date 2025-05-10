@@ -45,7 +45,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="create"
         options={{
-          title: 'Create',
+          title: 'Bookings',
           tabBarIcon: ({ color }) => (
             <PencilIcon size={28} color={color} />
           ),
