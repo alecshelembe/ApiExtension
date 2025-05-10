@@ -87,7 +87,7 @@ export default function BookingPage() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Vist my joburg</Text>
+      <Text style={styles.title}>Visit my joburg</Text>
         <NotificationPopup />
       <TextInput
         style={styles.input}
