@@ -148,6 +148,7 @@ const styles = StyleSheet.create({
     marginBottom: imageSpacing, // Gap between rows
     marginLeft: imageSpacing / 2, // Space between images horizontally
     marginRight: imageSpacing / 2, // Space between images horizontally
+
   },
   centered: {
     flex: 1,

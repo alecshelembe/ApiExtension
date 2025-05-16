@@ -87,8 +87,9 @@ export default function BookingPage() {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>Visit my joburg</Text>
         <NotificationPopup />
+
+      <Text style={styles.title}>Create </Text>
       <TextInput
         style={styles.input}
         placeholder="Full Name"
@@ -115,19 +116,6 @@ export default function BookingPage() {
         </TouchableOpacity>
       </View>
 
-      <Text style={styles.selected}>
-        Call Scheduled For:{' '}
-        {date.toLocaleString('en-US', {
-          weekday: 'long',
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-          hour: 'numeric',
-          minute: '2-digit',
-          hour12: true,
-        })}
-      </Text>
-
       {showPicker && (
         <DateTimePicker
           value={date}
@@ -145,9 +133,21 @@ export default function BookingPage() {
         multiline
       />
 
-      <TouchableOpacity style={styles.submitButton} onPress={handleBooking}>
-        <Text style={styles.submitButtonText}>Submit</Text>
-      </TouchableOpacity>
+       <TouchableOpacity style={styles.submitButton} onPress={handleBooking}>
+                       <Text style={styles.submitButtonText}>
+                               Create Call Request For:{' '}
+                               {date.toLocaleString('en-US', {
+                                 weekday: 'long',
+                                 year: 'numeric',
+                                 month: 'long',
+                                 day: 'numeric',
+                                 hour: 'numeric',
+                                 minute: '2-digit',
+                                 hour12: true,
+                               })}
+                             </Text>
+                     </TouchableOpacity>
+
 
       {serverResponse && (
         <View
@@ -220,10 +220,10 @@ const styles = StyleSheet.create({
     padding: 14,
     borderRadius: 8,
     alignItems: 'center',
+    marginBottom:15,
   },
   submitButtonText: {
     color: '#fff',
-    fontWeight: 'bold',
   },
   responseContainer: {
     marginTop: 24,

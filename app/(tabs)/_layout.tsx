@@ -34,34 +34,34 @@ export default function TabLayout() {
         }),
       }}
     >
+    <Tabs.Screen
+    name="account"
+    options={{
+      title: 'Account',
+      tabBarIcon: ({ color }) => <UserPlusIcon size={28} color={color} />,
+    }}
+  />
       <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Feed',
-          tabBarIcon: ({ color }) => <HomeIcon size={28} color={color} />,
-        }}
-      />
-       <Tabs.Screen
-              name="posts"  // New screen name for posts
+                    name="posts"  // New screen name for posts
+                    options={{
+                      title: 'Posts',
+                      tabBarIcon: ({ color }) => <DocumentTextIcon size={28} color={color} />, // Icon for posts
+                    }}
+                  />
+      <Tabs.Screen
+              name="index"
               options={{
-                title: 'Posts',
-                tabBarIcon: ({ color }) => <DocumentTextIcon size={28} color={color} />, // Icon for posts
+                title: 'Feed',
+                tabBarIcon: ({ color }) => <HomeIcon size={28} color={color} />,
               }}
-            />
-      <Tabs.Screen
-        name="create"
-        options={{
-          title: 'Bookings',
-          tabBarIcon: ({ color }) => <PencilIcon size={28} color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="account"
-        options={{
-          title: 'Account',
-          tabBarIcon: ({ color }) => <UserPlusIcon size={28} color={color} />,
-        }}
-      />
+            /><Tabs.Screen
+                name="create"
+                options={{
+                  title: 'create',
+                  tabBarIcon: ({ color }) => <PencilIcon size={28} color={color} />,
+                }}
+              />
+
       <Tabs.Screen
         name="users"
         options={{

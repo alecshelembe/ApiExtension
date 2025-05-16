@@ -12,6 +12,8 @@ import {
 import { useForm, Controller } from 'react-hook-form';
 import * as ImagePicker from 'expo-image-picker';
 import axios from 'axios';
+import NotificationSettings from "@/components/NotificationSettings";
+
 
 export default function CreateUserWithImage() {
   const { control, handleSubmit } = useForm();
@@ -90,6 +92,8 @@ export default function CreateUserWithImage() {
   return (
     <View style={{ flex: 1, backgroundColor: '#fff' }}>
       <ScrollView contentContainerStyle={styles.container} keyboardShouldPersistTaps="handled">
+        <Text style={styles.title}>Notification settings</Text>
+                <NotificationSettings/>
         <Text style={styles.title}>Create account</Text>
 
         <TouchableOpacity onPress={pickImage} style={styles.imagePicker}>

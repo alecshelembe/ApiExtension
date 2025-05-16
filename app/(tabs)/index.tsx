@@ -3,6 +3,7 @@ import { firebaseApp } from "@/firebase"; // Adjust path to match your project
 import { WebView } from "react-native-webview";
 import ThemedButton from "@/components/ThemedButton";
 import { ThemedView } from '@/components/ThemedView';
+import SearchComponent from "@/components/SearchFeature";
 import ImageViewing from 'react-native-image-viewing';
 import { TouchableOpacity } from 'react-native';
 
@@ -88,6 +89,7 @@ const SocialPostCard: React.FC = () => {
     const videoId = getYouTubeVideoId(item.video_link);
     return (
       <View style={styles.card}>
+      <SearchComponent/>
         <View style={styles.header}>
           {item.profile_image_url ? (
             <Image
@@ -110,7 +112,7 @@ const SocialPostCard: React.FC = () => {
           </View>
         </View>
         <View style={styles.detailsCard}>
-           {/* <Text style={styles.description}>{item.address}</Text> */}
+            <Text style={styles.description}>{item.address}</Text>
            <Text style={styles.title}>{item.place_name}</Text>
           {/*<Text style={styles.fee}>R {item.fee}</Text>*/}
           <Text style={styles.description}>{item.description}</Text>
@@ -208,6 +210,7 @@ const SocialPostCard: React.FC = () => {
       <ThemedView style={styles.buttonContainer}>
         <ThemedButton title="Get My location!" theme="primary" onPress={() => alert("Button Pressed!")} />
       </ThemedView>
+
     </SafeAreaView>
   );
 };
